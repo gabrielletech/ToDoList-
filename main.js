@@ -19,22 +19,25 @@ function addTodoItem(event) {
 
     //create list
     const newTodo = document.createElement('li');
-    newTodo.innerText = todoInput;
-    newTodo.classList.add('list-group-item');
+    newTodo.innerText = todoInput.value;
+    newTodo.classList.add('list-item');
     todoDiv.appendChild(newTodo);
 
     //completed button 
     const completed = document.createElement('button');
-    completed.innerHTML = 'Completed';
+    completed.innerHTML = '<i class="far fa-check-circle"></i>';
     completed.classList.add('complete-btn');
     todoDiv.appendChild(completed);
 
     //delete button 
     const deleted = document.createElement('button');
-    deleted.innerHTML = 'Delete';
+    deleted.innerHTML = '<i class="far fa-times-circle"></i>';
     deleted.classList.add('delete-btn');
     todoDiv.appendChild(deleted);
 
     //append to list 
     todoList.appendChild(todoDiv);
+
+    //clear to do input value 
+    todoInput.value = '';
 }
