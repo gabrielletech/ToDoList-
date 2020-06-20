@@ -6,11 +6,24 @@
 
 .main {
     text-align: center;
-    background-color: aliceblue;
+    background-image: linear-gradient(120deg, #FFDAB9, #FA8072)
 }
 
 .input-group {
     width: 50%;
     align-items: center;
     margin-left: 240px;
+}
+
+hr {
+    width: 20%;
+}
+
+button {
+    background-color: #B0C4DE;
+    border-radius: 15%;
+    -webkit-border-radius: 15%;
+    -moz-border-radius: 15%;
+    -ms-border-radius: 15%;
+    -o-border-radius: 15%;
 }
