@@ -22,21 +22,35 @@
     align-items: center;
 }*/
 
+body {
+    min-height: 100vh;
+}
+
+form {
+    min-height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form input, #add-todo {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: none;
+    background: #fff;
+}
+
+#todo-input {
+    height: 52px;
+    width: 30%;
+}
+
 hr {
     width: 20%;
 }
 
 .todo-header {
     font-weight: bold;
-}
-
-.add-todo {
-    background-color: #B0C4DE;
-    border-radius: 15%;
-    -webkit-border-radius: 15%;
-    -moz-border-radius: 15%;
-    -ms-border-radius: 15%;
-    -o-border-radius: 15%;
 }
 
 .list-item {
@@ -46,7 +60,8 @@ hr {
 }
 
 .complete-btn {
-    font-size: small;
+    font-size: 10px;
+    height: 40px;
     background: #008000;
     color: #fff;
     border: none;
