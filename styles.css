@@ -50,6 +50,10 @@ form input, #add-todo {
     width: 30%;
 }
 
+.completed {
+    text-decoration: line-through;
+}
+
 .todo {
     margin: 0.5rem;
     background: #fff;
@@ -112,4 +116,13 @@ hr {
 .delete-btn:hover {
     background-color: #D3D3D3;
     color: #000;
+}
+
+.fall {
+    opacity: 0;
+    transform: translateY(8rem) rotateZ(20deg);
+    -webkit-transform: translateY(8rem) rotateZ(20deg);
+    -moz-transform: translateY(8rem) rotateZ(20deg);
+    -ms-transform: translateY(8rem) rotateZ(20deg);
+    -o-transform: translateY(8rem) rotateZ(20deg);
 }
