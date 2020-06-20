@@ -1,3 +1,16 @@
 * {
     font-family: 'Slabo 27px', serif;
+    margin: auto;
+    padding: 10px;
+}
+
+.main {
+    text-align: center;
+    background-color: aliceblue;
+}
+
+.input-group {
+    width: 50%;
+    align-items: center;
+    margin-left: 240px;
 }
