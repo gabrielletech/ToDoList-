@@ -4,37 +4,28 @@
     padding: 10px;
 }
 
-.main {
-    text-align: center;
-    background-image: linear-gradient(120deg, #FFDAB9, #FA8072)
-}
-
-/*.input-group {
-    width: 50%;
-    align-items: center;
-    margin-left: 240px;
-}*/
-
-/*.todos {
-    /*margin-left: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}*/
-
 body {
+    text-align: center;
+    background-image: linear-gradient(120deg, #FFDAB9, #FA8072);
     min-height: 100vh;
 }
 
 form {
-    min-height: 40vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+a {
+    text-align: right;
+    color: #000;
+}
+
+header {
+    text-align: right;
+}
+
 form input, #add-todo {
-    padding: 0.5rem;
     font-size: 1rem;
     border: none;
     background: #fff;
@@ -55,7 +46,6 @@ form input, #add-todo {
 }
 
 .todo {
-    margin: 0.5rem;
     background: #fff;
     color: #000;
     font-size: 1.5rem;
