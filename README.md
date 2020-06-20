@@ -5,8 +5,8 @@ HTML, CSS &amp; JavaScript
 Clone or download onto your local PC, open in browser.
 
 ## Preview
-![screenshot1](todo1.png)
+![img](./images/todo1.png)
 
-![screenshot2](todo2.png)
+![screenshot2](./images/todo2.png)
 
-![screenshot3](todo3.png)
+![screenshot3](./images/todo3.png)
