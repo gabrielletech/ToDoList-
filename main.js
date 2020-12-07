@@ -63,3 +63,17 @@ function checkDelete(event) {
         todo.classList.toggle('completed');
     }
 }
+
+// Sign in/log in Functions 
+
+// Signup Successful modal 
+function signin() {
+   var signinModal = document.getElementById('signin').style.display="block";
+
+   // when the user clicks anywhere outside of the modal, close it 
+   window.onclick = function(e) {
+       if(e.target == signinModal) {
+           signinModal.style.display = "none"
+       }
+   }
+}
