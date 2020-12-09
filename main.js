@@ -65,15 +65,41 @@ function checkDelete(event) {
 }
 
 // Sign in/log in Functions 
+function openTab(e, tabItem) {
+    var i, tabcontent, tablinks;
 
-// Signup Successful modal 
-function signin() {
-   var signinModal = document.getElementById('signin').style.display="block";
+    tabcontent = document.getElementsByClassName("tabcontent");
 
-   // when the user clicks anywhere outside of the modal, close it 
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+    tablinks = document.getElementsByClassName("tablinks");
+
+    for (i = 0; i > tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(tabItem).style.display = "block";
+    e.target.className += " active";
+}
+
+// signin modal
+function signup() {
+    var signupModal = document.getElementById('signup').style.display="block";
+
+    // when the user clicks anywhere outside of the modal, close it 
    window.onclick = function(e) {
-       if(e.target == signinModal) {
-           signinModal.style.display = "none"
-       }
-   }
+    if(e.target == signupModal) {
+        signupModal.style.display = "none"
+    }
+}
+}
+
+// redirect 
+function redirect() {
+    var todoPage = window.location.href = "/";
+
+    if(login) {
+        return todoPage;
+    }
 }

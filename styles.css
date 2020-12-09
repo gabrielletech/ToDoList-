@@ -121,7 +121,7 @@ hr {
     -o-transform: translateY(8rem) rotateZ(20deg);
 }
 
-/* Signup */
+/* Signup 
 .tab-group ul li a {
     text-decoration: none;
     color: #fff;
@@ -150,6 +150,52 @@ hr {
     content: "";
     display: table;
     clear: both;
+} */
+
+.tab {
+    overflow: hidden;
+}
+
+.tab button {
+    background-color: #13232f;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+    display: inline-block;
+    margin: auto;
+}
+
+.tab button:hover {
+    background-color: #ddd;
+}
+
+.tab button.active {
+    background-color: #ccc;
+  }
+
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+    width: 60%;
+  }
+
+#signup {
+    margin-top: 2px;
+    display: block;
+    margin: auto;
+    box-shadow: 0 4px 10px 4px rgba(0,0,0,0.2);
+}
+
+#login {
+    margin-top: 2px;
+    display: block;
+    margin: auto;
+    box-shadow: 0 4px 10px 4px rgba(0,0,0,0.2);
 }
 
 li a {
